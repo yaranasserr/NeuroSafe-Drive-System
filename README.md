@@ -43,3 +43,8 @@ We have successfully expanded BCI technology from its traditional use in assisti
 ## How to Run the Project
 
 *(Instructions on setting up and running the project go here)*
+
+## Resources
+
+[Access the book and demo video](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
+

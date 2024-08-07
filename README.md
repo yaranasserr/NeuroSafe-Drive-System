@@ -48,3 +48,11 @@ We have successfully expanded BCI technology from its traditional use in assisti
 
 [Access the book and demo video](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
 
+## Acknowledgments
+
+This project was developed under the mentorship program of Valeo Automotive, whose guidance and support were invaluable. We also extend our gratitude to the Academy for Scientific Research and Technology for funding this project.
+
+## Bibliography
+
+The NeuroSafe Drive project was carried out by a dedicated team of students from the Electronics and Communication Department at Alexandria University, Egypt. The team specializes in AI, Embedded Systems, Software, and Robotics.
+

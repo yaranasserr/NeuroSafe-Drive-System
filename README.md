@@ -12,11 +12,11 @@ We have successfully expanded BCI technology from its traditional use in assisti
 
 ## Project Milestones
 
-- **BCI for Disabled Individuals**: Developed a BCI system for wheelchair control to enhance the mobility and independence of individuals with disabilities,Our BCI model for wheelchair control, with 5 classes (forward, backward, right, left, stop), achieved a classification accuracy of 92%.
+- **BCI for Disabled Individuals**: Developed a BCI system for wheelchair control to enhance the mobility and independence of individuals with disabilities.
 - **BCI for Mental Health Monitoring**: Expanded the use of BCI technology to monitor and assess mental health conditions.
 - **Integration of PPG Signals**: Incorporated PPG signals to monitor heart-related metrics and improve overall health monitoring.
-- **EEG and PPG for Stress Detection**: Combined EEG and PPG signals  with MultiModal deep learning model for accurate stress detection, achieving a classification accuracy of 99%.
-- **Sensor-Free System with rPPG**: Developed a sensor-free system relying on rPPG, using BCI as ground truth for automotive applications to enhance driver comfort. 
+- **EEG and PPG for Stress Detection**: Combined EEG and PPG signals for accurate stress detection, achieving a classification accuracy of 99%.
+- **Sensor-Free System with rPPG**: Developed a sensor-free system relying on rPPG, using BCI as ground truth for automotive applications to enhance driver comfort. Our BCI model for wheelchair control, with 5 classes (forward, backward, right, left, stop), achieved a classification accuracy of 92%.
 
 ## Key Components
 
@@ -44,9 +44,16 @@ We have successfully expanded BCI technology from its traditional use in assisti
 
 *(Instructions on setting up and running the project go here)*
 
+## Datasets used 
+
+[Access the datasets used ](https://drive.google.com/drive/folders/1in0-NH6YI6k8q6PYpGbGeM-kdwV5GCh_)
+
 ## Resources
 
 [Access the book and demo video](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
+
+
+
 
 ## Acknowledgments
 

@@ -44,9 +44,16 @@ We have successfully expanded BCI technology from its traditional use in assisti
 
 *(Instructions on setting up and running the project go here)*
 
+## Datasets used 
+
+[Access the datasets used ](https://drive.google.com/drive/folders/1in0-NH6YI6k8q6PYpGbGeM-kdwV5GCh_)
+
 ## Resources
 
 [Access the book and demo video](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
+
+
+
 
 ## Acknowledgments
 

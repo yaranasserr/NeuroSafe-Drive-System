@@ -61,4 +61,7 @@ You can explore the implementation details in the following notebook: [Stress De
 
 Both datasets used in this project are preprocessed and provided in this [Google Drive link](https://drive.google.com/drive/folders/1d4sSMIGzQq_d-SoNrowMDIJ8cjvrVDNM).
 
+## Handling Data 
+- Normalization for each subject seperatly 
+- Converting Raw EEG data to 3D to capture SpatioTemporal features across the electrodes 
 

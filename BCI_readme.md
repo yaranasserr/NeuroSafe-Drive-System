@@ -37,6 +37,10 @@ The following actions are identified in the motion control application:
 
 You can explore the implementation details in the following notebook: [Motion Control Notebook](https://github.com/NeuroSafe-Drive/NeuroSafe-Drive-System/blob/Brain-computer-Interface/motion.ipynb).
 
+#### Results 
+- Main Model Accuracy: 83.25%
+- TFLite Model Accuracy: 83.25%
+- ![alt text](motion_confusionmatrix.png)
 ### 2. Stress Detection
 The stress detection application analyzes brain signals to determine the stress levels of the user. The data for this application comes from the *STEW: Simultaneous Task EEG Workload Dataset,* which can be accessed through the following link: [STEW Dataset on IEEE DataPort](https://ieee-dataport.org/open-access/stew-simultaneous-task-eeg-workload-dataset).
 
@@ -47,6 +51,11 @@ The labels for the stress detection application are as follows:
 - `1`: Stressed
 
 You can explore the implementation details in the following notebook: [Stress Detection Notebook](https://github.com/NeuroSafe-Drive/NeuroSafe-Drive-System/blob/Brain-computer-Interface/stress.ipynb).
+
+#### Results 
+- Main Model Accuracy: 88.16%
+- TFLite Model Accuracy: 100%
+- ![alt text](stress_confusionmatrix.png)
 
 ## Data Sources and Preprocessing
 

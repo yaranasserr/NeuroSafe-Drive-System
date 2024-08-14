@@ -1,6 +1,11 @@
 # BCI Project
 
 This project involves two main applications utilizing Brain-Computer Interface (BCI) technology:
+### Brain-Computer Interface (BCI) with Motor Imagery
+
+A Brain-Computer Interface (BCI) is a technology that enables direct communication between the brain and external devices. It leverages brain signals, typically captured through electroencephalography (EEG), to interpret user intentions and translate them into commands. One common application of BCI is in motor imagery, where users imagine specific motor actions (e.g., moving a limb) to generate distinct brainwave patterns that can be decoded and used to control external devices.
+
+In our project, we utilized motor imagery to control motion. We employed the Emotiv EPOC X headset, which provides 14 channels of EEG data. This device captures brain signals from various locations on the scalp, allowing us to interpret motor intentions with high precision. The data obtained through the Emotiv EPOC X was essential for training our models, enabling them to accurately classify different motion-related intentions based on the user's brain activity.
 
 1. **Motion Control**
 2. **Stress Detection**
@@ -64,4 +69,11 @@ Both datasets used in this project are preprocessed and provided in this [Google
 ## Handling Data 
 - Normalization for each subject seperatly 
 - Converting Raw EEG data to 3D to capture SpatioTemporal features across the electrodes 
+
+
+### Warning: Emotiv EPOC X Developer API License Requirement
+
+Please note that the Emotiv EPOC X does not provide real-time raw EEG data acquisition without a Developer API license. This license costs $1250 per seat per year for students, making it a costly option for applications requiring real-time data. Therefore, it is not recommended for this type of application.
+
+Instead, a free API alternative is available, which can be accessed through the following GitHub repository: [Emotiv LSL API](https://github.com/vtr0n/emotiv-lsl).
 

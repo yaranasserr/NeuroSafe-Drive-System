@@ -36,6 +36,46 @@ We have successfully expanded BCI technology from its traditional use in assisti
 - Optimized system performance by converting deep learning models from Python to TensorFlow Lite C++ for real-time execution on edge devices.
 - Integrated embedded systems with custom ARM drivers and STM microcontrollers, leveraging CAN protocols for precise and responsive wheelchair control.
 
+## How the System Works
+- ![NeuroSafe Drive system](https://github.com/user-attachments/assets/53662205-fd2e-4c3e-8318-f3b47e58a36b)
+
+
+The NeuroSafe Drive system integrates multiple components to ensure effective real-time data processing, model prediction, and communication, all executed on a Raspberry Pi 5 platform. The system is divided into key sections:
+
+### 1. **BCI (Brain-Computer Interface)**
+   - **Function:** Acquires EEG (Electroencephalography) data for classification.
+   - **Process:** The headset captures EEG data, which is then classified by AI models optimized and converted from TensorFlow to TensorFlow Lite. The classified data is transmitted as control commands to a wheelchair or used for stress detection.
+
+### 2. **PPG (Photoplethysmography) Sensor**
+   - **Function:** Monitors physiological signals, including heart rate, respiration rate, and blood oxygen levels, for stress detection.
+   - **Process:** PPG data, along with EEG data, is processed for stress detection. The results, including heart rate, respiration rate, blood oxygen levels, and stress status, are sent over WebSocket to a mobile app for real-time monitoring and alerts.
+
+### 3. **Wheelchair Control**
+   - **Function:** Receives control commands based on classified EEG data.
+   - **Process:** The control commands derived from the classified EEG data are sent to the wheelchair, enabling individuals with severe mobility impairments to control their movement.
+
+### 4. **Inter-Process Communication (IPC)**
+   - **Shared Memory:** Facilitates concurrent access to a designated memory region by multiple processes, enabling swift data exchange without the overhead of data duplication.
+   - **Mutex (Mutual Exclusion):** Ensures exclusive access to shared resources, preventing simultaneous data access that could lead to conflicts and compromise system stability.
+
+### 5. **System Integration on Raspberry Pi**
+   - **Data Flow:** 
+     - **Data Acquisition from Headset:** A Python script interfaces with the headset's API to capture raw EEG data streams, saving them into a CSV file formatted with 14 columns of floating-point data.
+     - **Initial Processing and Prediction:**
+       - The Python script reads data sequentially from the CSV file, processing each line and transmitting it to the first C++ script via a named pipe.
+       - The first C++ script receives the data, processes it through a TensorFlow Lite model, and sends the prediction output to the CAN script via shared memory or another named pipe.
+     - **CAN Communication:**
+       - The CAN script receives predictions from the first C++ script and sends a serialized list of 5 uint8 elements to the STM over the CAN bus.
+       - It also captures real-time sensor data from the STM and sends it to the second C++ script.
+     - **Final Processing and Output:**
+       - The second C++ script receives sensor data, processes it through another TensorFlow Lite model, and outputs the final prediction.
+
+### 6. **Health Monitoring Data**
+   - **WebSocket Communication:** 
+     - Health status data, including stress detection, heart rate, respiration rate, and blood oxygen levels, is transmitted over WebSocket to a mobile app.
+     - The mobile app displays real-time data and provides alerts for any detected abnormalities, contributing to driver safety and well-being.
+
+
 ## Repository Structure
 
 *(Structure details go here)*

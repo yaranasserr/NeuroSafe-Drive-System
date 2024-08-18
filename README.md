@@ -98,7 +98,7 @@ cmake .. ``
 
 ## Resources
 
-[Access the book and demo video](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
+[Access the book ](https://drive.google.com/drive/folders/1SQYw4Wmmh6DEhTUPfxT3nn4LdtVrDM_i)
 
 
 

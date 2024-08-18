@@ -76,13 +76,21 @@ The NeuroSafe Drive system integrates multiple components to ensure effective re
      - The mobile app displays real-time data and provides alerts for any detected abnormalities, contributing to driver safety and well-being.
 
 
-## Repository Structure
-
-*(Structure details go here)*
 
 ## How to Run the Project
+### Instructions to Run the Project with TensorFlow Lite
 
-*(Instructions on setting up and running the project go here)*
+1. **Install TensorFlow Lite:**
+   ``
+   pip install tflite-runtime
+``
+2. **Build the Project with CMake:**
+``mkdir build
+cd build
+cmake .. ``
+
+3- **Compile the Project:**
+`` make ``
 
 ## Datasets used 
 

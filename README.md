@@ -89,7 +89,7 @@ The NeuroSafe Drive system integrates multiple components to ensure effective re
 cd build
 cmake .. ``
 
-3- **Compile the Project:**
+3. **Compile the Project:**
 `` make ``
 
 ## Datasets used 
